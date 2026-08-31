@@ -1,5 +1,4 @@
 body {
-  border: 1px solid black;
   /* Padding, margins, etc. */
   margin: 0;
   padding: 0;
@@ -9,16 +8,11 @@ body {
   font-family: Georgia, Garamond, serif;
 }
 
-.header {
-  border: 1px solid blue;
-}
-
 .navbar {
-  border: 1px solid red;
   background-color: #4f3c84;
   color: white;
   /* Padding, margins, etc */
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   margin: 0;
   /* Spatial formatting */
   display: flex;
@@ -29,9 +23,8 @@ body {
 }
 
 .navbar .logo {
-  border: 1px solid orange;
   /*Padding, margins, etc. */
-  padding: 0 1rem;
+  padding: 0;
   margin: 0;
   min-height: 60px;
   /* Spatial formatting */
@@ -39,8 +32,20 @@ body {
   align-items: center;
 }
 
+.navbar .logo a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-image {
+  display: block;
+  height: 60px;
+  width: auto;
+}
+
 .navbar .nav-links {
-  border: 1px solid green;
+
   /*Padding, margins, etc. */
   padding: 0;
   margin: 0;
@@ -56,7 +61,6 @@ body {
 }
 
 .navbar li {
-  border: 1px solid yellow;
   /*Padding, margins, etc. */
   padding: 0;
   margin: 0;
@@ -67,7 +71,6 @@ body {
 }
 
 .navbar a {
-  border: 1px solid purple;
   padding: 0 1rem;
   height: 100%;
   /* Remove default link styling */
