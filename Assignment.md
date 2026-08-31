@@ -3,8 +3,7 @@
 
 Create a small website for a fictional community correspondent who highlights a real public event, such as a festival, market, exhibition, educational program, sporting event, concert, or community celebration.
 
-By completing this assignment, you will practice basic HTML structure, navigation, external CSS, relative file paths,
-images, lists, quotations, code validation, independent feature exploration, and GitHub Pages deployment.
+By completing this assignment, you will practice basic HTML structure, navigation, external CSS, relative file paths, images, lists, quotations, code validation, independent feature exploration, and GitHub Pages deployment.
 
 ### Required Files and Organization
 
