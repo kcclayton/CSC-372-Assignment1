@@ -1,6 +1,6 @@
 body {
   /* Padding, margins, etc. */
-  margin: 0;
+  margin: 80px 0 0 0;
   padding: 0;
   background-color: white;
   color: #404040;
@@ -14,12 +14,17 @@ body {
   /* Padding, margins, etc */
   padding: 0.5rem 1rem;
   margin: 0;
+  box-sizing: border-box;
   /* Spatial formatting */
   display: flex;
-  align-items: stretch; /* Completely fill the available space */
+  align-items: stretch;
+  /* Completely fill the available space */
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar .logo {
@@ -45,9 +50,8 @@ body {
 }
 
 .navbar .nav-links {
-
   /*Padding, margins, etc. */
-  padding: 0;
+  padding: 0 1rem 0 0;
   margin: 0;
   gap: 0.5rem;
   min-height: 60px;
@@ -81,7 +85,6 @@ body {
 }
 
 .container {
-  border: 1px solid magenta;
   /* Padding, margins, etc. */
   max-width: 1200px;
   margin: 0 auto;
@@ -89,10 +92,10 @@ body {
 }
 
 .heading {
-    font-weight: bold;
-    font-size: 22pt;
-    color: #A4A400;
-    /* Padding, margins, etc. */
-    margin: 0;
-    padding: 10px 0;
+  font-weight: bold;
+  font-size: 22pt;
+  color: #A4A400; /* not sufficient contrast */
+  /* Padding, margins, etc. */
+  margin: 0;
+  padding: 10px 0;
 }
