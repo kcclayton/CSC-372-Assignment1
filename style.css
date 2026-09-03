@@ -183,6 +183,56 @@ main h1 {
   text-decoration: underline;
 }
 
+.event-overview details {
+
+  /* Box Model + Dimensions */
+  margin: 0 0 15px;
+  padding: 10px 15px;
+
+  /* Colors + Backgrounds */
+  background-color: #FFFFA8;
+
+}
+
+.event-overview summary {
+
+  /* Box Model + Dimensions */
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  border: 2px solid #A4A400;
+
+  /* Typography + Text Styling */
+  font-family: 'Doppio One', arial, helvetica, sans-serif;
+  cursor: pointer;
+
+}
+
+.event-overview summary::-webkit-details-marker {
+
+  /* Layout + Positioning */
+  display: none;
+  
+}
+
+.event-overview summary::before {
+  content: "+";
+  font-size: 18pt;
+  line-height: 1;
+}
+
+.event-overview details[open] summary::before {
+  content: "-";
+}
+
+.event-overview details p {
+
+  /* Box Model + Dimensions */
+  margin-bottom: 0;
+  
+}
+
 /* HERO SECTION STYLING */
 .hero-section {
 
