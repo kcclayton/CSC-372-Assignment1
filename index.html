@@ -43,7 +43,7 @@
 
     <main>
 
-        <section class="hero-section">
+        <section id="index-hero" class="hero-section">
 
             <div class="hero-text">
 
@@ -59,7 +59,7 @@
 
         <section class="main-content">
 
-            <div class="grid">
+            <section class="grid">
 
                 <!-- CREATE SECTION -->
                 <article class="container">
@@ -68,15 +68,11 @@
                     <p class="body-text">
                         In Realton, we believe new ideas are central to the resilience of our community.
                         Bring your imagination to life with our many creative resources.
-
-                        <!-- in the Margret Anchor Community Center, 
-                    build something new in our For Real&trade; outdoor makerspace, 
-                    or show off your work in our weekly Actual Avenue art walk. -->
                     </p>
                     <div class="img-container">
                         <img src="images/create.jpg" alt="Two people painting a sidewalk" class="article-image">
                     </div>
-                    <a href="create.html" class="learn-btn">Learn More</a>
+                    <a href="#" class="button">Make Something</a>
 
                 </article>
 
@@ -85,7 +81,7 @@
 
                     <h1>Discover</h1>
                     <p class="body-text">
-                        There's no better way to learn about your community than to discover it for yourself.
+                        There's no better way to learn about our community than to discover it for yourself.
                         Join us at a community event, explore our local history, or take a guided tour of our town.
                     </p>
                     <div class="img-container">
@@ -93,7 +89,7 @@
                             class="article-image">
                     </div>
 
-                    <a href="discover.html" class="learn-btn">Learn More</a>
+                    <a href="#" class="button">Learn More</a>
 
                 </article>
 
@@ -108,83 +104,87 @@
                     <div class="img-container">
                         <img src="images/connect.jpg" alt="Two people shaking hands" class="article-image">
                     </div>
-                    <a href="connect.html" class="learn-btn">Learn More</a>
+                    <a href="event.html" class="button">Find an Event</a>
                 </article>
 
-            </div>
+            </section>
 
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptatibus dolore repudiandae repellat vero sed nesciunt fuga blanditiis voluptas.
-                Repellat rerum veritatis ipsam cumque exercitationem nostrum unde quos, doloribus ab perferendis.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum. Quod, voluptatibus!
-                Quisquam, voluptatum. Quod, voluptatibus!
-                Quisquam, voluptatum. Quod, voluptatibus!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum. Quod, voluptatibus!
-                Quisquam, voluptatum. Quod, voluptatibus!
-                Quisquam, voluptatum. Quod, voluptatibus!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum. Quod, voluptatibus!
-                Quisquam, voluptatum. Quod, voluptatibus!
-                Quisquam, voluptatum. Quod, voluptatibus!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum. Quod, voluptatibus!
-                Quisquam, voluptatum. Quod, voluptatibus!
-                Quisquam, voluptatum. Quod, voluptatibus!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum. Quod, voluptatibus!
-                Quisquam, voluptatum. Quod, voluptatibus!
-                Quisquam, voluptatum. Quod, voluptatibus!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum. Quod, voluptatibus!
-                Quisquam, voluptatum. Quod, voluptatibus!
-                Quisquam, voluptatum. Quod, voluptatibus!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.
-            </p>
+            <section class="testimonial-carousel" aria-label="Realton community testimonials">
+
+                <input type="radio" name="testimonial" id="testimonial-1" checked>
+                <input type="radio" name="testimonial" id="testimonial-2">
+                <input type="radio" name="testimonial" id="testimonial-3">
+                <input type="radio" name="testimonial" id="testimonial-4">
+
+                <div class="testimonial-wrapper">
+
+                    <blockquote class="testimonial-panel testimonial-panel-1">
+                        <img src="images/jordan.webp" alt="Resident painting a sidewalk">
+                        <div class="testimonial-copy">
+                            <p>“Realton gives every neighbor a place to turn a good idea into something real.”</p>
+                            <cite>Jordan Ellis | 8 years in Realton</cite>
+                        </div>
+                    </blockquote>
+
+                    <blockquote class="testimonial-panel testimonial-panel-2">
+                        <img src="images/marisol.jpg" alt="Residents enjoying a community festival">
+                        <div class="testimonial-copy">
+                            <p>“Every event feels like an invitation to discover another part of the town I call home.”</p>
+                            <cite>Marisol Bennett | 12 years in Realton</cite>
+                        </div>
+                    </blockquote>
+
+                    <blockquote class="testimonial-panel testimonial-panel-3">
+                        <img src="images/devon.jpeg" alt="Two residents greeting each other">
+                        <div class="testimonial-copy">
+                            <p>“The people here make it easy to feel welcome, involved, and connected.”</p>
+                            <cite>Devon Carter | 5 years in Realton</cite>
+                        </div>
+                    </blockquote>
+
+                    <blockquote class="testimonial-panel testimonial-panel-4">
+                        <img src="images/priya.jpg" alt="Neighbors gathering at a local event">
+                        <div class="testimonial-copy">
+                            <p>“There is always a new reason to step outside and share a day with your neighbors.”</p>
+                            <cite>Priya Shah | 15 years in Realton</cite>
+                        </div>
+                    </blockquote>
+
+                </div>
+
+                <div class="testimonial-controls">
+                    <label for="testimonial-1">Show Jordan's testimonial</label>
+                    <label for="testimonial-2">Show Marisol's testimonial</label>
+                    <label for="testimonial-3">Show Devon's testimonial</label>
+                    <label for="testimonial-4">Show Priya's testimonial</label>
+                </div>
+
+            </section>
+
+            <section class="newsletter-banner">
+
+                <div class="newsletter-text">
+
+                    <p>Sign up for our newsletter to receive updates on upcoming events and community news.</p>
+                    <a href="#" id="banner-btn" class="button">Sign Up</a>
+
+                </div>
+
+            </section>
 
         </section>
 
     </main>
+
+    <footer>
+
+        <p>
+            <span>Please note: this page is representative of the non-profit organization For Real Inc.</span>
+            <span>For the Sturdy County Department of Commerce, please click <a href="#">here.</a></span>
+            <span>&copy; 2026 For Real Inc. All rights reserved.</span>
+        </p>
+
+    </footer>
 
 </body>
 
