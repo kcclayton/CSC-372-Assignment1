@@ -1,98 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Doppio+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* PAGE DEFAULT STYLING */
 body {
-  /* Padding, margins, etc. */
+
+  /* Box Model + Dimensions */
   margin: 0;
   padding: 0;
-  background-color: white;
-  color: #404040;
+
+  /* Typography + Text Styling*/
   font-size: 11pt;
   font-family: Georgia, Garamond, serif;
+
+  /* Colors + Backgrounds */
+  color: #404040;
+  background-color: transparent;
+  background-image: none;
+
 }
 
+/* NAVBAR STYLING */
 .navbar {
-  background-color: #4f3c84;
-  color: white;
-  /* Padding, margins, etc */
+
+  /* Box Model + Dimensions */
+  width: 100%;
   padding: 0.5rem 1rem;
   margin: 0;
-  /* Spatial formatting */
+  box-sizing: border-box;
+
+  /* Layout + Positioning */
   display: flex;
-  align-items: stretch; /* Completely fill the available space */
   justify-content: space-between;
-  position: sticky;
+  align-items: stretch;
+  position: fixed;
   top: 0;
+  left: 0;
+  z-index: 100;
+
+  /* Colors + Backgrounds */
+  color: white;
+  background-color: #A400A4;
+  background-image: linear-gradient(to right, #A400A4, #8d008d);
+
+  /* Visual Effects + UI */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+
 }
 
 .navbar .logo {
-  /*Padding, margins, etc. */
+
+  /* Box Model + Dimensions */
   padding: 0;
   margin: 0;
   min-height: 60px;
-  /* Spatial formatting */
+
+  /* Layout + Positioning */
   display: flex;
   align-items: center;
+
 }
 
 .navbar .logo a {
+
+  /* Box Model + Dimensions */
+  height: 100%;
+
+  /* Layout + Positioning */
   display: flex;
   align-items: center;
-  height: 100%;
+
 }
 
 .logo-image {
-  display: block;
+
+  /* Box Model + Dimensions */
   height: 60px;
   width: auto;
+
+  /* Layout + Positioning */
+  display: block;
+
 }
 
 .navbar .nav-links {
 
-  /*Padding, margins, etc. */
-  padding: 0;
-  margin: 0;
-  gap: 0.5rem;
+  /* Box Model + Dimensions */
   min-height: 60px;
-  /* Remove default list styling */
-  list-style: none;
-  justify-content: space-between;
-  /* Spaital formatting */
+  padding: 0 1rem 0 0;
+  margin: 0;
+
+  /* Layout + Positioning */
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
+
+  /* Generated Content + Lists */
+  list-style: none;
 
 }
 
 .navbar li {
-  /*Padding, margins, etc. */
+  /* Box Model + Dimensions */
   padding: 0;
   margin: 0;
-  /* Remove default list item styling */
-  list-style: none;
+
+  /* Typography + Text Styling */
+  font-family: 'Doppio One', arial, helvetica, sans-serif;
   text-decoration: none;
   text-align: center;
+
+  /* Generated Content + Lists */
+  list-style: none;
+
 }
 
 .navbar a {
+
+  /* Box Model + Dimensions */
   padding: 0 1rem;
   height: 100%;
-  /* Remove default link styling */
+
+  /* Layout + Positioning */
   display: flex;
-  text-decoration: none;
   align-items: center;
+
+  /* Typography + Text Styling */
+  text-decoration: none;
+
+  /* Colors + Backgrounds */
   color: white;
+
 }
 
-.container {
-  border: 1px solid magenta;
-  /* Padding, margins, etc. */
+/* MAIN STYLING */
+main {
+
+  /* Box Model + Dimensions */
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 50px;
+
 }
 
-.heading {
-    font-weight: bold;
-    font-size: 22pt;
-    color: #A4A400;
-    /* Padding, margins, etc. */
-    margin: 0;
-    padding: 10px 0;
+main h1 {
+
+  /* Box Model + Dimensions */
+  margin: 0;
+  padding: 10px 0;
+
+  /* Typography + Text Styling */
+  font-weight: bold;
+  font-size: 22pt;
+  text-transform: uppercase;
+  text-shadow: 5px 2px 10px rgba(170, 170, 170, 0.5);
+
+  /* Colors + Backgrounds */
+  color: #A4A400;
+
+}
+
+.main-content {
+
+  /* Box Model + Dimensions */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 20px 50px 60px;
+  box-sizing: border-box;
+
+  /* Layout + Positioning */
+  position: relative;
+  z-index: 1;
+
+  /* Colors + Backgrounds */
+  background-color: white;
+  background-image: radial-gradient(#fffbf9 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.main-content h1 {
+
+  /* Typography + Text Styling */
+  text-decoration: underline;
+}
+
+/* HERO SECTION STYLING */
+.hero-section {
+
+  /* Box Model + Dimensions */
+  width: 100vw;
+  min-height: 350px;
+  padding: 75px 20px 20px;
+  margin-top: -20px;
+  margin-left: calc(50% - 50vw);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+  /* Layout + Positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 0;
+
+  /* Colors + Backgrounds */
+  background-size: cover;
+  background-position: center;
+
+}
+
+#index-hero {
+
+  /* Colors + Backgrounds */
+  background-image: linear-gradient(to right, #34343480, #46464680), url('images/index-hero.jpg');
+
+}
+
+#event-hero {
+
+  /* Colors + Backgrounds */
+  background-image: linear-gradient(to right, #34343480, #46464680), url('images/event-hero.jpg');
+
+}
+
+.hero-text {
+
+  /* Box Model + Dimensions */
+  width: 100%;
+
+  /* Typography + Text Styling */
+  font-family: 'Bowlby One SC', arial, helvetica, sans-serif;
+  font-size: 48pt;
+  text-align: center;
+  letter-spacing: 3px;
+
+}
+
+.hero-text h1 span {
+
+  /* Box Model + Dimensions */
+  margin: 10px 0;
+
+  /* Layout + Positioning */
+  display: block;
+
+  /* Typography + Text Styling */
+  font-size: 28pt;
+  text-shadow: 2px 2px 4px #00000080;
+
+  /* Colors + Backgrounds */
+  color: #ffffff;
+
+}
+
+/* GRID STYLING */
+.grid {
+
+  /* Box Model + Dimensions */
+  padding: 0 100px;
+
+  /* Layout + Positioning */
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.grid>.container {
+
+  /* Layout + Positioning */
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container {
+
+  /* Box Model + Dimensions */
+  padding: 10px;
+
+  /* Layout + Positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.grid img {
+
+  /* Box Model + Dimensions */
+  width: 100%;
+  height: auto;
+
+  /* Layout + Positioning */
+  display: block;
+  justify-content: center;
+
+  /* Visual Effects + UI */
+  box-shadow: 5px 5px 5px #7979791f;
+}
+
+.button {
+
+  /* Box Model + Dimensions */
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+
+  /* Layout + Positioning */
+  display: inline-block;
+
+  /* Typography + Text Styling */
+  font-family: 'Doppio One', arial, helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  /* Colors + Backgrounds */
+  color: white;
+  background-color: #00A4A4;
+  background-image: linear-gradient(to left, #00A4A4, #009090);
+
+}
+
+.grid>.container .button {
+
+  /* Box Model + Dimensions */
+  margin-top: auto;
+
+  /* Layout + Positioning */
+  align-self: flex-start;
+
+}
+
+/* TESTIMONIAL CAROUSEL STYLING */
+.testimonial-carousel {
+
+  /* Box Model + Dimensions */
+  max-width: 1000px;
+  margin: 70px auto;
+
+  /* Layout + Positioning */
+  position: relative;
+
+}
+
+.testimonial-carousel input {
+
+  /* Layout + Positions*/
+  position: absolute;
+
+  /* Colors + Backgrounds */
+  opacity: 0;
+
+  /* User Interface + Lists */
+  pointer-events: none;
+
+}
+
+.testimonial-wrapper {
+
+  /* Box Model + Dimensions */
+  height: 260px;
+
+}
+
+.testimonial-panel {
+
+  /* Box Model + Dimensions */
+  margin: 0;
+  padding: 0;
+
+  /* Layout + Positioning */
+  display: none;
+  align-items: stretch;
+  height: 260px;
+
+  /* Colors + Backgrounds */
+  background-color: #a400a45d;
+
+}
+
+.testimonial-panel img {
+
+  /* Box Model + Dimensions */
+  width: 32%;
+  height: 260px;
+
+  /* Layout + Positioning */
+  object-fit: cover;
+}
+
+.testimonial-copy {
+
+  /* Box Model + Dimensions */
+  padding: 35px 45px;
+
+}
+
+.testimonial-copy p {
+
+  /* Box Model + Dimensions */
+  margin: 0 0 25px;
+
+  /* Typography + Text Styling */
+  font-family: 'Montserrat', arial, helvetica, sans-serif;
+  font-size: 18pt;
+  font-style: italic;
+
+}
+
+.testimonial-copy cite {
+
+  /* Typography + Text Styling */
+  font-family: 'Doppio One', arial, helvetica, sans-serif;
+  font-size: 12pt;
+  font-style: normal;
+
+}
+
+#testimonial-1:checked~.testimonial-wrapper .testimonial-panel-1,
+#testimonial-2:checked~.testimonial-wrapper .testimonial-panel-2,
+#testimonial-3:checked~.testimonial-wrapper .testimonial-panel-3,
+#testimonial-4:checked~.testimonial-wrapper .testimonial-panel-4 {
+
+  /* Box Model + Dimensions */
+  display: flex;
+
+}
+
+.testimonial-controls {
+
+  /* Box Model + Dimensions */
+  margin-top: 18px;
+
+  /* Layout + Positions */
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+}
+
+.testimonial-controls label {
+
+  /* Box Model + Dimensions*/
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+  /* Typography + Text Styling */
+  font-size: 0;
+
+  /* Colors + Backgrounds */
+  background-color: #A4A400;
+
+  /* User Interface + Lists */
+  cursor: pointer;
+
+}
+
+#testimonial-1:checked~.testimonial-controls label[for="testimonial-1"],
+#testimonial-2:checked~.testimonial-controls label[for="testimonial-2"],
+#testimonial-3:checked~.testimonial-controls label[for="testimonial-3"],
+#testimonial-4:checked~.testimonial-controls label[for="testimonial-4"] {
+
+  /* User Interface + Lists */
+  outline: 2px solid #A4A400;
+  outline-offset: 3px;
+
+}
+
+/* NEWSLETTER BANNER STYLING */
+.newsletter-banner {
+
+  /* Box Model + Dimensions */
+  padding: 60px;
+  margin: 50px 0;
+  box-sizing: border-box;
+
+  /* Layout + Positioning */
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  /* Colors + Backgrounds */
+  color: white;
+  background-color: #00A4A4;
+  background-image: linear-gradient(to left, #00A4A4, #009090);
+
+}
+
+.newsletter-banner p {
+
+  /* Box Model + Dimensions */
+  margin: 0;
+  padding: 0;
+
+  /* Typography + Text Styling */
+  font-family: 'Montserrat', arial, helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 24pt;
+
+}
+
+#banner-btn {
+
+  /* Box Model + Dimensions */
+  margin-top: 30px;
+
+  /* Typography + Text Styling */
+  font-size: 14pt;
+
+  /* Colors + Backgrounds */
+  background-color: #A400A4;
+  background-image: linear-gradient(to right, #A400A4, #8d008d);
+
+  /* Visual Effects + UI */
+  box-shadow: 5px 5px 5px #4343431f;
+
+}
+
+/* FOOTER STYLING */
+footer {
+
+  /* Box Model + Dimensions */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+
+  /* Layout + Positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Typography + Text Styling */
+  font-size: 10pt;
+  font-family: 'Doppio One', arial, helvetica, sans-serif;
+  text-align: center;
+
+  /* Colors + Backgrounds */
+  color: white;
+  background-color: #00A4A4;
+  background-image: linear-gradient(to right, #00A4A4, #008484);
+
+}
+
+footer a {
+
+  /* Colors + Backgrounds */
+  color: white;
+
+}
+
+footer p span {
+
+  /* Layout + Positioning */
+  display: block;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .grid {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-wrapper {
+    height: auto;
+  }
+
+  .testimonial-panel {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .testimonial-panel img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .testimonial-copy {
+    padding: 25px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grid {
+    animation: none;
+  }
 }
