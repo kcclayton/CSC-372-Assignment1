@@ -18,9 +18,9 @@
 
     <header>
 
-        <nav class="navbar">
+        <nav>
 
-            <div class="logo">
+            <div class="nav-logo">
 
                 <a href="index.html" aria-label="Go to home page">
 
@@ -50,7 +50,7 @@
                 <h1>
                     <span>Let's</span>
                     <span>Get</span>
-                    <span>Real</span>
+                    <span>Real.</span>
                 </h1>
 
             </div>
@@ -59,111 +59,66 @@
 
         <section class="main-content">
 
-            <section class="grid">
+            <section id="values-grid">
 
                 <!-- CREATE SECTION -->
-                <article class="container">
+                <article class="value-container">
 
                     <h1>Create</h1>
-                    <p class="body-text">
+                    <p class="value-text">
                         In Realton, we believe new ideas are central to the resilience of our community.
                         Bring your imagination to life with our many creative resources.
                     </p>
-                    <div class="img-container">
-                        <img src="images/create.jpg" alt="Two people painting a sidewalk" class="article-image">
-                    </div>
+                    <img src="images/create.jpg" alt="Two people painting a sidewalk">
                     <a href="#" class="button">Make Something</a>
 
                 </article>
 
                 <!-- DISCOVER SECTION -->
-                <article class="container">
+                <article class="value-container">
 
                     <h1>Discover</h1>
-                    <p class="body-text">
+                    <p class="value-text">
                         There's no better way to learn about our community than to discover it for yourself.
                         Join us at a community event, explore our local history, or take a guided tour of our town.
                     </p>
-                    <div class="img-container">
-                        <img src="images/discover.jpg" alt="Two people hugging joyfully at a community festival"
-                            class="article-image">
-                    </div>
-
+                    <img src="images/discover.jpg" alt="Two people hugging joyfully at a community festival">
                     <a href="#" class="button">Learn More</a>
 
                 </article>
 
                 <!-- CONNECT SECTION -->
-                <article class="container">
+                <article class="value-container">
 
                     <h1>Connect</h1>
-                    <p class="body-text">
+                    <p class="value-text">
                         We are a community of people who care about each other and our town.
                         Connect with your neighbors, meet new friends, and get involved in your community today.
                     </p>
-                    <div class="img-container">
-                        <img src="images/connect.jpg" alt="Two people shaking hands" class="article-image">
-                    </div>
+                    <img src="images/connect.jpg" alt="Two people shaking hands">
                     <a href="event.html" class="button">Find an Event</a>
+
                 </article>
 
             </section>
 
-            <section class="testimonial-carousel" aria-label="Realton community testimonials">
+            <section class="testimonial-banner">
 
-                <input type="radio" name="testimonial" id="testimonial-1" checked>
-                <input type="radio" name="testimonial" id="testimonial-2">
-                <input type="radio" name="testimonial" id="testimonial-3">
-                <input type="radio" name="testimonial" id="testimonial-4">
+                <blockquote class="testimonial-panel">
 
-                <div class="testimonial-wrapper">
+                    <img src="images/jordan.webp" alt="A headshot of Jordan Ellis">
+                    <div class="testimonial-content">
+                        <p>“Realton gives every neighbor a place to turn a good idea into something real.”</p>
+                        <cite>Jordan Ellis | 8 years in Realton</cite>
+                    </div>
 
-                    <blockquote class="testimonial-panel testimonial-panel-1">
-                        <img src="images/jordan.webp" alt="Resident painting a sidewalk">
-                        <div class="testimonial-copy">
-                            <p>“Realton gives every neighbor a place to turn a good idea into something real.”</p>
-                            <cite>Jordan Ellis | 8 years in Realton</cite>
-                        </div>
-                    </blockquote>
-
-                    <blockquote class="testimonial-panel testimonial-panel-2">
-                        <img src="images/marisol.jpg" alt="Residents enjoying a community festival">
-                        <div class="testimonial-copy">
-                            <p>“Every event feels like an invitation to discover another part of the town I call home.”</p>
-                            <cite>Marisol Bennett | 12 years in Realton</cite>
-                        </div>
-                    </blockquote>
-
-                    <blockquote class="testimonial-panel testimonial-panel-3">
-                        <img src="images/devon.jpeg" alt="Two residents greeting each other">
-                        <div class="testimonial-copy">
-                            <p>“The people here make it easy to feel welcome, involved, and connected.”</p>
-                            <cite>Devon Carter | 5 years in Realton</cite>
-                        </div>
-                    </blockquote>
-
-                    <blockquote class="testimonial-panel testimonial-panel-4">
-                        <img src="images/priya.jpg" alt="Neighbors gathering at a local event">
-                        <div class="testimonial-copy">
-                            <p>“There is always a new reason to step outside and share a day with your neighbors.”</p>
-                            <cite>Priya Shah | 15 years in Realton</cite>
-                        </div>
-                    </blockquote>
-
-                </div>
-
-                <div class="testimonial-controls">
-                    <label for="testimonial-1">Show Jordan's testimonial</label>
-                    <label for="testimonial-2">Show Marisol's testimonial</label>
-                    <label for="testimonial-3">Show Devon's testimonial</label>
-                    <label for="testimonial-4">Show Priya's testimonial</label>
-                </div>
+                </blockquote>
 
             </section>
 
-            <section class="newsletter-banner">
+            <section id="newsletter-banner">
 
-                <div class="newsletter-text">
+                <div id="newsletter-text">
 
                     <p>Sign up for our newsletter to receive updates on upcoming events and community news.</p>
                     <a href="#" id="banner-btn" class="button">Sign Up</a>
