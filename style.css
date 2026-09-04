@@ -213,7 +213,7 @@ main h1 {
 
   /* Layout + Positioning */
   display: none;
-  
+
 }
 
 .event-overview summary::before {
@@ -230,7 +230,7 @@ main h1 {
 
   /* Box Model + Dimensions */
   margin-bottom: 0;
-  
+
 }
 
 /* HERO SECTION STYLING */
@@ -385,8 +385,8 @@ main h1 {
 
 }
 
-/* TESTIMONIAL CAROUSEL STYLING */
-.testimonial-carousel {
+/* TESTIMONIAL STYLING */
+.testimonial-banner {
 
   /* Box Model + Dimensions */
   max-width: 1000px;
@@ -394,19 +394,6 @@ main h1 {
 
   /* Layout + Positioning */
   position: relative;
-
-}
-
-.testimonial-carousel input {
-
-  /* Layout + Positions*/
-  position: absolute;
-
-  /* Colors + Backgrounds */
-  opacity: 0;
-
-  /* User Interface + Lists */
-  pointer-events: none;
 
 }
 
@@ -424,7 +411,7 @@ main h1 {
   padding: 0;
 
   /* Layout + Positioning */
-  display: none;
+  display: flex;
   align-items: stretch;
   height: 260px;
 
@@ -443,82 +430,32 @@ main h1 {
   object-fit: cover;
 }
 
-.testimonial-copy {
+.testimonial-container {
 
   /* Box Model + Dimensions */
   padding: 35px 45px;
 
+  /* Layout + Dimensions */
+  align-items: top;
+
 }
 
-.testimonial-copy p {
-
-  /* Box Model + Dimensions */
-  margin: 0 0 25px;
+.testimonial-container p {
 
   /* Typography + Text Styling */
   font-family: 'Montserrat', arial, helvetica, sans-serif;
-  font-size: 18pt;
+  font-weight: 300;
+  font-size: 20pt;
   font-style: italic;
 
 }
 
-.testimonial-copy cite {
+.testimonial-container cite {
 
-  /* Typography + Text Styling */
+  /* Typograpy + Text Styling */
   font-family: 'Doppio One', arial, helvetica, sans-serif;
   font-size: 12pt;
   font-style: normal;
-
-}
-
-#testimonial-1:checked~.testimonial-wrapper .testimonial-panel-1,
-#testimonial-2:checked~.testimonial-wrapper .testimonial-panel-2,
-#testimonial-3:checked~.testimonial-wrapper .testimonial-panel-3,
-#testimonial-4:checked~.testimonial-wrapper .testimonial-panel-4 {
-
-  /* Box Model + Dimensions */
-  display: flex;
-
-}
-
-.testimonial-controls {
-
-  /* Box Model + Dimensions */
-  margin-top: 18px;
-
-  /* Layout + Positions */
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-
-}
-
-.testimonial-controls label {
-
-  /* Box Model + Dimensions*/
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-
-  /* Typography + Text Styling */
-  font-size: 0;
-
-  /* Colors + Backgrounds */
-  background-color: #A4A400;
-
-  /* User Interface + Lists */
-  cursor: pointer;
-
-}
-
-#testimonial-1:checked~.testimonial-controls label[for="testimonial-1"],
-#testimonial-2:checked~.testimonial-controls label[for="testimonial-2"],
-#testimonial-3:checked~.testimonial-controls label[for="testimonial-3"],
-#testimonial-4:checked~.testimonial-controls label[for="testimonial-4"] {
-
-  /* User Interface + Lists */
-  outline: 2px solid #A4A400;
-  outline-offset: 3px;
 
 }
 
