@@ -26,5 +26,3 @@
 ###### Return Link
 1. Includes a clearly labeled link back to `index.html` called "[text for link]"
 
-## Styles Used
-
